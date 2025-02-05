@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.2",
         "hpwebdeveloper/laravel-pay-pocket": "^2.2",
-        "laravel/framework": "^11.13",
+        "laravel/framework": "^11.14",
         "laravel/tinker": "^2.10"
     },
     "require-dev": {
