@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-use HPWebdeveloper\LaravelPayPocket\Interfaces\WalletOperations;
-use HPWebdeveloper\LaravelPayPocket\Traits\HandlesDeposit;
-use HPWebdeveloper\LaravelPayPocket\Traits\HandlesPayment;
-use HPWebdeveloper\LaravelPayPocket\Traits\HasWallet;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use ToneflixCode\LaravelPayPocket\Interfaces\WalletOperations;
+use ToneflixCode\LaravelPayPocket\Traits\HandlesDeposit;
+use ToneflixCode\LaravelPayPocket\Traits\HandlesPayment;
+use ToneflixCode\LaravelPayPocket\Traits\HasWallet;
 
 class User extends Authenticatable implements WalletOperations
 {
@@ -19,7 +19,7 @@ class User extends Authenticatable implements WalletOperations
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = [
         'name',
@@ -30,7 +30,7 @@ class User extends Authenticatable implements WalletOperations
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $hidden = [
         'password',

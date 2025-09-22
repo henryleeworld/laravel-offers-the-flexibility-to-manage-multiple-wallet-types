@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use HPWebdeveloper\LaravelPayPocket\Facades\LaravelPayPocket;
 use Illuminate\Http\Request;
+use ToneflixCode\LaravelPayPocket\Facades\LaravelPayPocket;
 
 class BalanceController extends Controller
 {

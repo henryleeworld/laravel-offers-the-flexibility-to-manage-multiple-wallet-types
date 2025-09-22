@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use HPWebdeveloper\LaravelPayPocket\Exceptions\InsufficientBalanceException;
-use HPWebdeveloper\LaravelPayPocket\Facades\LaravelPayPocket;
-use HPWebdeveloper\LaravelPayPocket\Traits\GetWallets;
 use Illuminate\Http\Request;
+use ToneflixCode\LaravelPayPocket\Exceptions\InsufficientBalanceException;
+use ToneflixCode\LaravelPayPocket\Facades\LaravelPayPocket;
+use ToneflixCode\LaravelPayPocket\Traits\GetWallets;
 
 class OrderController extends Controller
 {
